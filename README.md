@@ -1,2 +1,2 @@
 # Salesforce-Trailhead
-Scripit to solve Trailhead challenges
+Scripts to solve Trailhead challenges
