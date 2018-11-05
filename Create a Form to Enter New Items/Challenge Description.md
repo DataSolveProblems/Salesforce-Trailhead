@@ -1,5 +1,5 @@
 # Challenge Description
-Create a Form to Enter New Items
+__Create a Form to Enter New Items
 
 In this challenge you'll create a form to enter new items, a list to display the items entered, and add SLDS styling. First, to make our camping list look more appealing, change the campingHeader component to use lightning:layout and SLDS. Similar to the unit, style the Camping List H1 inside the slds-page-header. Add the action:goal SLDS icon using lightning:icon.
 
