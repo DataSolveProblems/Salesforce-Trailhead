@@ -1,4 +1,5 @@
 **Save and Load Records with a Server-Side Controller**
+
 Persist your records to the database using a server-side controller. The campingList component loads existing records when it starts up and saves records to the database when the form is submitted.
 
 * Create a CampingListController Apex class with a getItems method and saveItem method.
