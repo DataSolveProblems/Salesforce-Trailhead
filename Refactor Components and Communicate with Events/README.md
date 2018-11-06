@@ -1,4 +1,4 @@
-**Refactor Components and Communicate with Events**
+## Refactor Components and Communicate with Events
 
 * Refactor the input form for camping list items into its own component and communicate with component events.
 * Replace the HTML form in the campingList component with a new campingListForm component that calls the clickCreateItem JavaScript controller action when clicked.
