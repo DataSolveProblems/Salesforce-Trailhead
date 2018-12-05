@@ -19,7 +19,6 @@
     // Send action off to be executed
     $A.enqueueAction(action);
 },
-
     
     handleAddItem: function(component, event, helper) {
     //   var newItem = event.getParam("item");
@@ -36,7 +35,5 @@
         		}
     		});
     		$A.enqueueAction(action);
-        		}
-    
-              
+        		}   
 })
