@@ -1,0 +1,38 @@
+<apex:page standardController="contact" recordSetVar="contacts" sidebar="false" standardStylesheets="false" showHeader="false">
+<apex:slds />
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    var ul = document.getElementById("contactList");
+    ul.addEventListener("click", function(e) {
+    sforce.one.navigateToSObject(e.target.getAttribute("data-id"));
+    }; 
+    </script>
+    <apex:slds />
+</head>
+
+<ul class="list-group">
+  <li class="list-group-item">Cras justo odio</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item">Vestibulum at eros</li>
+</ul>
+<dl class="slds-list_horizontal slds-wrap">
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Name">First Label:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for Name">Description for Name</dd>
+  <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Phone">Phone:</dt>
+  <dd class="slds-item_detail slds-truncate" title="Description for Phone">Description for Phone</dd>
+</dl>
+
+<apex:pageBlock title="Contacts List">
+       
+        <!-- Contacts List -->
+        <apex:repeat value="{! contacts }" var="c">
+            <apex:outputText value="{!c.Name }"/>
+            <apex:outputText value="{!c.Phone }"/>
+        </apex:repeat>
+</apex:pageBlock>
+
+</apex:page>
