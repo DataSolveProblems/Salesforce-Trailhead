@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">  
+   <deploymentStatus>Deployed</deploymentStatus>  
+   <fields>  
+     <fullName>Start_Location_Lat__c</fullName>  
+     <label>Start Location Latitude</label>  
+     <required>false</required>  
+     <type>Number</type>  
+     <unique>false</unique>  
+     <scale>4</scale>  
+     <precision>7</precision>  
+   </fields>  
+   <fields>  
+     <fullName>Start_Location_Long__c</fullName>  
+     <label>Start Location Longitude</label>  
+     <required>false</required>  
+     <type>Number</type>  
+     <unique>false</unique>  
+     <scale>4</scale>  
+     <precision>7</precision>  
+   </fields>  
+   <fields>  
+     <fullName>Start_Time__c</fullName>  
+     <label>Start Time</label>  
+     <required>True</required>  
+     <type>DateTime</type>  
+     </fields>  
+   <fields>  
+     <fullName>End_Time__c</fullName>  
+     <label>End Time</label>  
+     <required>false</required>  
+     <type>DateTime</type>  
+     </fields>  
+   <fields>  
+     <fullName>Service_Type__c</fullName>  
+     <label>Service Type</label>  
+     <length>16</length>  
+     <required>false</required>  
+     <type>Text</type>  
+     <unique>false</unique>  
+   </fields>  
+   <fields>  
+     <fullName>Rider_Account__c</fullName>  
+     <label>Rider Account</label>  
+     <length>16</length>  
+     <required>true</required>  
+     <type>Text</type>  
+     <unique>false</unique>  
+   </fields>  
+   <fields>  
+     <fullName>Rider_Rating__c</fullName>  
+     <label>Rider Rating</label>  
+     <required>false</required>  
+     <type>Number</type>  
+     <unique>false</unique>  
+     <scale>1</scale>  
+     <precision>2</precision>  
+   </fields>  
+   <indexes>  
+     <fullName>Rider_History_Index</fullName>  
+     <label>Rider History Index</label>  
+     <fields>  
+       <name>Rider_Account__c</name>  
+       <sortDirection>DESC</sortDirection>  
+     </fields>  
+     <fields>  
+       <name>Start_Time__c</name>  
+       <sortDirection>ASC</sortDirection>  
+     </fields>  
+   </indexes>  
+   <label>Rider History</label>  
+   <pluralLabel>Rider Historys</pluralLabel>  
+</CustomObject>
