@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">  
+<label>Rider History Big Object</label>  
+ <fieldPermissions>  
+     <editable>true</editable>  
+     <field>Rider_History__b.Start_Location_Lat__c</field>  
+     <readable>true</readable>  
+   </fieldPermissions>  
+   <fieldPermissions>  
+     <editable>true</editable>  
+     <field>Rider_History__b.Start_Location_Long__c</field>  
+     <readable>true</readable>  
+   </fieldPermissions>  
+   <fieldPermissions>  
+     <editable>true</editable>  
+     <field>Rider_History__b.End_Time__c</field>  
+     <readable>true</readable>  
+   </fieldPermissions>  
+   <fieldPermissions>  
+     <editable>true</editable>  
+     <field>Rider_History__b.Service_Type__c</field>  
+     <readable>true</readable>  
+   </fieldPermissions>  
+   <fieldPermissions>  
+     <editable>true</editable>  
+     <field>Rider_History__b.Rider_Rating__c</field>  
+     <readable>true</readable>  
+   </fieldPermissions>   
+</PermissionSet>
