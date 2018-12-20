@@ -1,3 +1,5 @@
+// https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_subscribe_apex.htm
+
 // Trigger for catching Low_Ink events.
 trigger LowInkTrigger on Low_Ink__e (after insert) {    
     // List to hold all cases to be created.
