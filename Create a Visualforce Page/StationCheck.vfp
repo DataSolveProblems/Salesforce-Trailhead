@@ -1,0 +1,14 @@
+<apex:page sidebar="false">
+<!--Flight Systems Checklist Visualforce Page-->
+   <h1>StationStatus</h1>
+   <apex:form id="stationReadinessChecklist">
+      <apex:pageBlock title="Station Readiness Checklist">
+      
+         <apex:pageBlockButtons >
+            <!--Adding Save Button-->
+            <apex:commandButton value="Save" action="{!save}"/>
+         </apex:pageBlockButtons>
+          
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>
