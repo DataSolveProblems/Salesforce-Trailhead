@@ -1,0 +1,15 @@
+<apex:page>
+    <apex:pageBlock >
+        <div>
+            <H2>Quick Share</H2>
+            <li>{!$User.FirstName} </li>
+            <li>{!$User.LastName} </li>
+            <li>{!$User.Email} </li>
+            <li>{!$User.Phone} </li>
+            <li>{!$User.Title} </li>
+            <input type="text" name="mail" value=" "/>
+            <input type="Button" value="Save"/>
+        </div>
+        
+    </apex:pageBlock>
+</apex:page>
