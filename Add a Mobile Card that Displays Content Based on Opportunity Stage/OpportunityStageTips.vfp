@@ -1,0 +1,19 @@
+<apex:page docType="html-5.0" standardController="Opportunity" title="Details">
+    
+    <apex:outputPanel rendered="{!if(Opportunity.stagename=='Prospecting', true, false)}">
+        Prospecting
+    </apex:outputPanel>
+    
+    <apex:outputPanel rendered="{!if(Opportunity.stagename=='Needs Analysis', true, false)}">
+        Needs Analysis
+    </apex:outputPanel>
+    
+    <apex:outputPanel rendered="{!if(Opportunity.stagename=='Proposal/Price Quote', true, false)}">
+        Proposal/Price Quite
+    </apex:outputPanel>   
+
+    <apex:outputPanel rendered="{!if(Opportunity.stagename=='Negotiation/Review', true, false)}">
+        Negotiation/Review
+    </apex:outputPanel>
+    
+</apex:page>
