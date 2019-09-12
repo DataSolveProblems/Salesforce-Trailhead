@@ -1,0 +1,18 @@
+public class AccountsSelector extends fflib_SObjectSelector {
+	
+    public List<Schema.SObjectField> getSObjectFieldList() {
+        return new List<Schema.SObjectField> {
+            Account.ID, Account.Description, Account.Name, Account.AnnualRevenue
+        };
+    }
+    
+    public Schema.SObjectType getSObjectType() {
+        return Account.SObjectType;
+    }
+    
+    public List<Account> selectById(Set<ID> idSet) {
+        List<Account> acctList = new List <Account>();
+        acctList = (List<Account>) selectSObjectsById(idSet);
+        return acctList;        
+    }
+}
